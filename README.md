@@ -44,44 +44,43 @@ A professional DICOM file viewer application built with Next.js, TypeScript, and
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
-git clone <repository-url>
-cd jointwise-dicom
-\`\`\`
+```bash
+git clone https://github.com/marccodesstuff/JointWise-App.git
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+````
 
 3. Run the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Build for Production
 
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## Project Structure
 
-\`\`\`
+```
 src/
 ├── app/                    # Next.js App Router pages
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Dashboard page
-│   └── viewer/            # DICOM viewer page
-├── components/            # React components
-│   └── DicomViewer.tsx    # Main viewer component
-├── types/                 # TypeScript type definitions
-│   └── dicom.ts          # DICOM-related types
-└── globals.css           # Global styles
-\`\`\`
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Dashboard page
+│   └── viewer/             # DICOM viewer page
+├── components/             # React components
+│   └── DicomViewer.tsx     # Main viewer component
+├── types/                  # TypeScript type definitions
+│   └── dicom.ts            # DICOM-related types
+└── globals.css             # Global styles
+```
 
 ## Usage
 
@@ -92,8 +91,8 @@ src/
 
 ### DICOM Viewer
 1. Use the toolbar to access viewing tools:
-   - Zoom: Click and drag to zoom in/out
-   - Pan: Move the image around
+   - Zoom: Click and drag to zoom in/out (has issues)
+   - Pan: Move the image around (not working)
    - Window/Level: Adjust image contrast and brightness
    - Reset: Return to original view
 2. Patient and study information is displayed in the header
@@ -120,22 +119,3 @@ The viewer component includes placeholder functionality for:
 - Print and export functionality
 - User authentication and access control
 - DICOM server connectivity (WADO-RS, DICOMweb)
-
-## Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is licensed under the ISC License.
